@@ -7,7 +7,7 @@ require_once __DIR__.'/partials/_header.php';
 <div class=" bg-white rounded-lg shadow-md p-10
 	transition-transform w-96 text-center">
     <h1 class="text-green-600 text-3xl">
-        GeeksforGeeks
+        Posting Login
     </h1>
     <h3 class="text-lg">
         Enter your login credentials
