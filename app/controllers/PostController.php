@@ -23,6 +23,7 @@ class PostController
 
 
     }
+
     public function index()
     {
         $posts= (new Post())->allPost('posts');
@@ -36,6 +37,13 @@ class PostController
         $post= (new Post())->getPost('posts',Request::all()['id']);
 
         return view('show',['post'=>$post]);
+    }
+
+    public function edit()
+    {
+        $post= (new Post())->getPost('posts',Request::all()['id']);
+
+        return view('edit',['post'=>$post]);
     }
 
     public function delete()
